@@ -1,7 +1,8 @@
 // some input state examples
 
-// if you just have one input
+import react, { useState } from 'react'
 
+// if you just have one input
 const Input = () => {
   const [value, setValue] = useState('initialValue')
 
@@ -11,6 +12,7 @@ const Input = () => {
   return <input value={value} onChange={handleChange} />
 }
 
+// if you have more than one input
 const Form = () => {
   // now values is an object with the inputs as key-value pairs
   // intial value is an empty object {}
@@ -28,6 +30,7 @@ const Form = () => {
   const handleClick = () => doSomethingWith(values.a, values.b, values.c)
 
   return (
+    // it doesnt have to be in a form
     <form>
       {/* make sure each input has a name that matches the value */}
       <input value={values.a} name='a' onChange={handleChange} />
