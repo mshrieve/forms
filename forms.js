@@ -1,6 +1,6 @@
 // some input state examples
 
-import react, { useState } from 'react'
+import React, { useState } from 'react'
 
 // if you just have one input
 const Input = () => {
