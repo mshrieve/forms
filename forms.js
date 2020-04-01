@@ -25,12 +25,16 @@ const Form = () => {
       [event.target.name]: event.target.value
     }))
 
+  const handleClick = () => doSomethingWith(values.a, values.b, values.c)
+
   return (
     <form>
       {/* make sure each input has a name that matches the value */}
       <input value={values.a} name='a' onChange={handleChange} />
       <input value={values.b} name='b' onChange={handleChange} />
       <input value={values.c} name='c' onChange={handleChange} />
+
+      <button onClick={handleClick}>action</button>
     </form>
   )
 }
