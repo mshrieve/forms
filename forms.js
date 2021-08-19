@@ -33,9 +33,9 @@ const Form = () => {
     // it doesnt have to be in a form
     <form>
       {/* make sure each input has a name that matches the value */}
-      <input value={values.a} name='a' onChange={handleChange} />
-      <input value={values.b} name='b' onChange={handleChange} />
-      <input value={values.c} name='c' onChange={handleChange} />
+      <Input value={values.a} name='a' onChange={handleChange} />
+      <Input value={values.b} name='b' onChange={handleChange} />
+      <Input value={values.c} name='c' onChange={handleChange} />
 
       <button onClick={handleClick}>action</button>
     </form>
